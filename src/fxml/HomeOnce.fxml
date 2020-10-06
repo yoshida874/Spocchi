@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="995.0" styleClass="background5" stylesheets="@../CSS/sample.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="127.66669464111328" minHeight="10.0" prefHeight="127.66669464111328" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="104.66665649414062" minHeight="10.0" prefHeight="43.66663869222003" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="66.66667683919269" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="31.99998982747394" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="event" styleClass="font5" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Hyperlink fx:id="link" text="Hyperlink" textFill="#1d00ff" GridPane.rowIndex="2">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font></Hyperlink>
+      <Label prefHeight="17.0" prefWidth="309.0" style="-fx-font-size: 20;" styleClass="font5" text="詳細はこちら↓" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" />
+      <Line endX="899.2929077148438" endY="0.4141904413700104" startX="-100.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
+   </children>
+</GridPane>

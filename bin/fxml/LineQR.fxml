@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1000.0" styleClass="background4" stylesheets="@../CSS/sample.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="485.33333333333326" minWidth="10.0" prefWidth="320.6666259765625" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="485.33333333333326" minWidth="10.0" prefWidth="382.3333740234375" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="410.66666666666663" minWidth="10.0" prefWidth="293.99995930989576" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="42.33333206176758" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="170.3333330154419" minHeight="31.66668446858722" prefHeight="141.66666793823242" valignment="TOP" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="121.66667683919269" minHeight="31.66668446858722" prefHeight="51.33333524068196" valignment="TOP" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="90.66665649414062" prefHeight="212.00001525878906" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints />
+      <RowConstraints />
+  </rowConstraints>
+   <children>
+      <MenuBar fx:id="menuBar" scaleY="1.2" style="-fx-border-radius: 3;" styleClass="mnbar" stylesheets="@../CSS/sample.css" GridPane.columnSpan="3">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+         <padding>
+            <Insets left="240.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="5.0" />
+         </GridPane.margin>
+      </MenuBar>
+      <Label fx:id="Title" scaleX="1.3" scaleY="1.5" styleClass="title" text="すぽっち!!" wrapText="true" GridPane.halignment="LEFT">
+         <font>
+            <Font name="Courier New Italic" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="LineQRTitle" text="LINEQRコード" textFill="#04ff47" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <Reflection>
+               <input>
+                  <Blend mode="BLUE" />
+               </input>
+            </Reflection>
+         </effect></Label>
+      <ImageView fx:id="LineImage" fitHeight="209.0" fitWidth="226.0" pickOnBounds="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="4" GridPane.valignment="TOP" />
+      <Label styleClass="lineQ" stylesheets="@../CSS/sample.css" text="こちらに記載されているLINEのQRコードを登録してくれると" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font></Label>
+      <Label styleClass="lineQ" stylesheets="@../CSS/sample.css" text="ここからイベント情報や試合の情報がメッセージとして送られてくるよ(´ω`)" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <ImageView fitHeight="185.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true" rotate="-12.2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../CSS/library/man.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="294.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true" rotate="10.3" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <image>
+            <Image url="@../CSS/library/phone.png" />
+         </image>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </ImageView>
+      <Label rotate="10.5" style="-fx-background-color: white;" text="すぽっち‼:　イベント情報  " GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="30.0" top="110.0" />
+         </GridPane.margin>
+      </Label>
+      <Label rotate="10.5" style="-fx-background-color: white;" text="LINE・・1分前                   " GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="35.0" top="93.0" />
+         </GridPane.margin>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="75.0" opacity="0.4" pickOnBounds="true" preserveRatio="true" rotate="18.0" scaleX="2.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+         <image>
+            <Image url="@../CSS/library/migi.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="120.0" left="30.0" />
+         </GridPane.margin>
+         <effect>
+            <ColorAdjust brightness="0.98" contrast="-1.0" hue="0.35" saturation="-0.65" />
+         </effect>
+      </ImageView>
+   </children>
+</GridPane>

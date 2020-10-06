@@ -1,0 +1,123 @@
+.title {
+    -fx-font-size: 32px;
+    -fx-font-family: "Courier New";
+    -fx-text-fill: linear-gradient(to bottom, #77FFFF, #0000FF, #00FFFF);
+    -fx-font-style: italic;
+}
+
+.actiontarget {
+    -fx-font-size: 28px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 0, 0, 1);
+    -fx-background-image: url(library/kabegami9.jpg);
+    -fx-background-color: white;
+}
+
+.mnbar {
+    -fx-font-size: 28px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 0, 0, 1);
+    -fx-background-image: url(library/kabegami9.jpg);
+    /*-fx-background-color: white;*/
+    -fx-border-color: derive(-fx-background, -75%);
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-border-radius: 10;
+}
+
+
+.da {
+    -fx-font-size: 18px;
+    -fx-font-family: "Lucida Sans";
+}
+
+.s-tit {
+    -fx-font-size: 32px;
+    -fx-font-family: "UD Digi Kyokasho N-B";
+    -fx-text-fill: #f07639;
+}
+
+.team-tit {
+    -fx-font-size: 28px;
+    -fx-font-family: "UD Digi Kyokasho N-B";
+    -fx-text-fill: #f07639;
+}
+
+.kensaku {
+    -fx-font-size: 32px;
+    -fx-font-family: "UD Digi Kyokasho N-B";
+    -fx-text-fill: white;
+}
+
+.lineQ {
+    -fx-font-size: 24px;
+    -fx-font-family: "Algerian";
+    -fx-text-fill: white;
+}
+
+.bun {
+    -fx-background-color:#2a5058;
+    -fx-font-family: "HGMaruGothicMPRO";
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+}
+
+.team-tit {
+    -fx-font-size: 38px;
+    -fx-font-family: "UD Digi Kyokasho N-B";
+}
+
+.image {
+    -fx-background-image: url(library/AllSyohaku.png);
+}
+
+.img2 {
+    -fx-background-image: url(library/MK300.png);
+}
+
+.background {
+    -fx-background-image: url(library/kabegami4@100.jpg);
+}
+
+
+.background3 {
+    -fx-background-image: url(library/igari.jpg);
+}
+
+.background4 {
+    -fx-background-image: url(library/renga.jpg);
+}
+
+.background5 {
+    -fx-background-image: url(library/back0.jpg);
+    -fx-font-family:"arial black";
+}
+
+.background6 {
+    -fx-background-image: url(library/sorara.png);
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Lucida Sans";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#FF3333, #2A5058);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #FF3333);
+}
+
+.review {
+    -fx-font-family: "UD Digi Kyokasho N-B";
+    -fx-text-fill: white;
+}
+
+.re-bun {
+    -fx-font-family: "HGMaruGothicMPRO";
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
